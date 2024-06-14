@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOUSE RENTIFY APP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="rentify/Rentify.png" alt="Rentify" width="108" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active m-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="#addproperty">AddProperty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="login.html" id="userLogin">
+                <button type="button" class="btn btn-outline-success p-1 m-1"><i class="fa fa-fw fa-user"></i> Sign
+                    in</button>
+            </a>
+
+            <div class="dropdown pe-5">
+                <button class="btn btn-success dropdown-toggle" type="button" id="userInfo" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdownMenu">
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container" id="addproperty">
+        <div class="heading p-2">
+            <h2 class="text-success">Properties details</h2>
+        </div>
+        <form class="w-100 login-form " style="text-align: -webkit-center;" id="propertyForm">
+            <div class="row px-5 mx-5">
+                <div class="col-md-6">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="street" placeholder="Enter street">
+                            <label for="street">Street</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-6">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="district" placeholder="Enter district">
+                            <label for="district">District</label>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="state" placeholder="Enter state">
+                            <label for="state">State</label>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="housetype" placeholder="Enter house type">
+                            <label for="housetype">House Type</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="floor" placeholder="Enter floor">
+                            <label for="floor">Floor</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="numberofbedroom"
+                                placeholder="Enter number of bedrooms">
+                            <label for="numberofbedroom">Number of Bedrooms</label>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="numberofbathroom"
+                                placeholder="Enter number of bathrooms">
+                            <label for="numberofbathroom">Number of Bathrooms</label>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="hospital"
+                                placeholder="Enter distance to hospital">
+                            <label for="hospital">Hospital Distance (km)</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="school"
+                                placeholder="Enter distance to hospital">
+                            <label for="school">school Distance (km)</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="college"
+                                placeholder="Enter distance to school">
+                            <label for="college">college Distance (km)</label>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="input-group pt-2">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" id="price" placeholder="Enter price">
+                            <label for="price">Price (₹)</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2 ">
+                    <div class="input-group pt-2 ">
+                        <div class="form-floating p-3">
+                            <input type="file" class="form-control-file ps-4" id="file">
+                            <label for="file">Property Image</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success w-50 p-2 m-4">Submit</button>
+
+            <div id="response"></div>
+        </form>
+    </div>
+
+    <footer class="bg-success text-white pt-4 " id="Contact">
+        <div class="container  footer ">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="" class="text-white "><img src="icon/Rentify 1.png" class="w-50 " alt=""></a>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur a odit aut fugit sed consequuntur magni
+                        dolores eos qui ratione.</p>
+                    <h5>Follow us</h5>
+                    <div class="container ">
+                        <div class="row w-75 m-0 p-0">
+                            <div class="col">
+                                <img src="icon/facebook.png" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="icon/instagram.png" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="icon/whatsapp.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">How It Works</a></li>
+                        <li><a href="#" class="text-white">Customers</a></li>
+                        <li><a href="#" class="text-white">Our Story</a></li>
+                        <li><a href="#" class="text-white">Career</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Support & Summary</a></li>
+                        <li><a href="#" class="text-white">Helping Center</a></li>
+                        <li><a href="#" class="text-white">Privacy & Policy</a></li>
+                        <li><a href="#" class="text-white">Buy or Rent Properties</a></li>
+                        <li><a href="#" class="text-white">Blogs</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <div class="row">
+                        <h5>Contact Information</h5>
+                        <div class="contact-info">
+                            <img src="icon/message.png" alt="Email Icon" class="contact-icon">
+                            <div>
+                                <p><strong>Email:</strong><br><a href="mailto:youremailid@gmail.com"
+                                        class="text-white">youremailid@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <img src="icon/call.png" alt="Phone Icon" class="contact-icon">
+                            <div>
+                                <p><strong>Contact:</strong><br>(+01) 123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <img src="icon/location.png" alt="Location Icon" class="contact-icon">
+                            <div>
+                                <p><strong>Location:</strong><br>3012 Pine Garden Lane<br>Atlanta, Boulevard, GA 30328
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const userData = JSON.parse(localStorage.getItem('user'));
+
+        if (userData) {
+            document.getElementById('userLogin').hidden = true;
+            document.getElementById('userInfo').innerHTML = ` <i class="fa fa-fw fa-user"></i> 
+			${userData.firstname}
+		   ${userData.lastname}
+		`;
+
+
+        } else {
+            document.getElementById('userLogin').hidden = false
+            document.getElementById('userInfo').hidden = true;
+        }
+
+        if (userData.type === false) {
+            dropdownMenu.innerHTML = `
+				<a class="dropdown-item" href="addproperty.html">Add Property</a>
+				<a class="dropdown-item" href="myproperty.html">My Property</a>
+				<a class="dropdown-item" href="#" id="logout">Logout</a>
+			`;
+        } else if (userData.type === true) {
+            dropdownMenu.innerHTML = `
+				<a class="dropdown-item" href="#" id="logout">Logout</a>
+			`;
+        }
+        else {
+            userLogin.classList.remove('hidden');
+            userInfo.classList.add('hidden');
+        }
+
+        dropdownMenu.addEventListener('click', function (event) {
+            if (event.target && event.target.id === 'logout') {
+                localStorage.removeItem('user');
+                window.location.href = 'index.html';
+            }
+        });	
+    </script>
+
+
+
+
+    <script src="rentify/js/addproperty.js"></script>
+</body>
+
+</html>
